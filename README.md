@@ -2,6 +2,12 @@
 
 Tools for working with the inventory/BOM database via the Model Context Protocol.
 
+The stack pairs an MCP server with a seeded Postgres inventory database so an LLM (Claude) can act as a bill-of-materials assistant. Through the exposed tools you can:
+- Look up item details and descriptions.
+- Expand parent assemblies into their component BOMs or find which parents use a component.
+- Search the catalog by text.
+- Insert new items or add component relationships—all routed through safe SQL transactions behind the scenes.
+
 ## Prerequisites
 - Docker 24+ and Docker Compose plugin
 - `initdb/inventory_dump.sql` checked into the repo (already included)
