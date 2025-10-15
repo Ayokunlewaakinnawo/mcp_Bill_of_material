@@ -51,16 +51,16 @@ Claude looks for MCP server definitions in `~/Library/Application Support/Claude
 {
   "mcpServers": {
     "count-r": {
-      "command": "/Users/ayo/Documents/allata/Test_int/count-r-server/env/bin/python3",
+      "command": "/path-to-environment-interpreter/env/bin/python3",
       "args": [
-        "/Users/ayo/Documents/allata/Test_int/count-r-server/server.py"
+        "/path-to-server-file/server.py"
       ],
       "env": { "PYTHONUNBUFFERED": "1" }
     },
     "bom-db-tools": {
-      "command": "/Users/ayo/Documents/allata/Test_int/count-r-server/env/bin/python3",
+      "command": "/path-to-environment-interpreter/env/bin/python3",
       "args": [
-        "/Users/ayo/Documents/allata/Test_int/industrial-part/server.py"
+        "/path-to-server-file/server.py"
       ],
       "env": {
         "PYTHONUNBUFFERED": "1",
